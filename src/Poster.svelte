@@ -1,5 +1,9 @@
 <script>
   export let src;
+
+  function onError(){
+    this.style.display='none';
+  }
 </script>
 
 <style>
@@ -13,4 +17,4 @@
   }
 </style>
 
-<img {src} class="poster" alt="poster" onerror="this.style.display='none'" />
+<img {src} class="poster" alt="poster" onerror="onError()" />
