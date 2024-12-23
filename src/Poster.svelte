@@ -6,7 +6,7 @@
   }
 </script>
 
-<img {src} class="poster" alt="poster" on:error="{onError}" />
+<img {src} class="poster" alt="poster" onerror="{onError}" />
 
 <style>
   .poster {
