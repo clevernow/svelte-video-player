@@ -1,10 +1,12 @@
 <script>
   export let src;
 
-  function onError(){
-    this.style.display='none';
+  function onError() {
+    this.style.display = 'none';
   }
 </script>
+
+<img {src} class="poster" alt="poster" on:error="{onError}" />
 
 <style>
   .poster {
@@ -16,5 +18,3 @@
     object-fit: cover;
   }
 </style>
-
-<img {src} class="poster" alt="poster" onerror="onError()" />
